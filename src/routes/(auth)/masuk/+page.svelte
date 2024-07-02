@@ -12,7 +12,7 @@
 
 <section id="login" class="px-5 py-12">
 	<Card class="mx-auto max-w-md">
-		<CardHeader>
+		<CardHeader class="pb-0">
 			<CardTitle class="text-2xl">Masuk</CardTitle>
 			<CardDescription>Silahkan login dengan provider yang tersedia berikut.</CardDescription>
 		</CardHeader>

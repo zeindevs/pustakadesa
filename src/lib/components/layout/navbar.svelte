@@ -6,14 +6,17 @@
 	<div class="container flex max-w-7xl items-center justify-between px-0">
 		<a href="/" class="text-xl font-bold">PustakaDesa</a>
 		<ul class="flex items-center gap-3">
-			<li>
+			<li class="hidden md:flex">
 				<Button href="/fitur" variant="ghost">Fitur</Button>
 			</li>
-			<li>
-				<Button href="/masuk" variant="ghost">Masuk</Button>
+			<li class="">
+				<Button href="/dashboard" variant="ghost">Dashboard</Button>
 			</li>
-			<li>
-				<Button href="/daftar" variant="default">Daftar</Button>
+			<li class="hidden md:flex">
+				<Button href="/daftar" variant="ghost">Daftar</Button>
+			</li>
+			<li class="">
+				<Button href="/masuk" variant="default">Masuk</Button>
 			</li>
 		</ul>
 	</div>
