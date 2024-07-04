@@ -1,7 +1,4 @@
-import Footer from "./footer.svelte";
-import Navbar from "./navbar.svelte";
+import Footer from './footer.svelte';
+import Navbar from './navbar.svelte';
 
-export {
-	Footer,
-	Navbar,
-};
+export { Footer, Navbar };

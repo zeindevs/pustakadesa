@@ -1,7 +1,7 @@
 <script>
 	import { Footer, Navbar } from '$lib/components/layout';
 	import { Button } from '$lib/components/ui/button';
-	import { Card, CardHeader, CardTitle, CardDescription } from '$lib/components/ui/card';
+	import * as Card from '$lib/components/ui/card';
 </script>
 
 <svelte:head>
@@ -11,11 +11,11 @@
 <Navbar />
 
 <section id="login" class="px-5 py-12">
-	<Card class="mx-auto max-w-md">
-		<CardHeader class="pb-0">
-			<CardTitle class="text-2xl">Masuk</CardTitle>
-			<CardDescription>Silahkan login dengan provider yang tersedia berikut.</CardDescription>
-		</CardHeader>
+	<Card.Root class="mx-auto max-w-md">
+		<Card.Header class="pb-0">
+			<Card.Title class="text-2xl">Masuk</Card.Title>
+			<Card.Description>Silahkan login dengan provider yang tersedia berikut.</Card.Description>
+		</Card.Header>
 		<form class="space-y-5 p-5">
 			<div>
 				<Button variant="default" class="w-full">Masuk dengan Google</Button>
@@ -25,7 +25,7 @@
 				<a href="/daftar" class="font-medium hover:underline">Daftar</a>
 			</div>
 		</form>
-	</Card>
+	</Card.Root>
 </section>
 
 <Footer />

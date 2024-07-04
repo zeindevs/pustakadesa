@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { Footer, Navbar } from '$lib/components/layout';
-	import { Button } from '$lib/components/ui/button';
-	import { Card, CardTitle, CardContent } from '$lib/components/ui/card';
+	import { Button, Root } from '$lib/components/ui/button';
+	import * as Card from '$lib/components/ui/card';
 
-	let features: string[] = ['Kelola Buku', 'Cetak Barcode', 'Peminjaman', 'Member'];
+	let features: string[] = ['Kelola Buku', 'Cetak Barcode', 'Peminjaman', 'Anggota'];
 </script>
 
 <svelte:head>
@@ -32,11 +32,11 @@
 		<h2 class="font-medium">Fitur yang tersedia</h2>
 		<div class="grid gap-3 divide-x divide-secondary sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			{#each features as feature}
-				<Card class="cursor-pointer bg-primary text-background">
-					<CardContent class="p-5">
-						<CardTitle class="text-base font-medium">{feature}</CardTitle>
-					</CardContent>
-				</Card>
+				<Card.Root class="cursor-pointer bg-primary text-background">
+					<Card.Content class="p-5">
+						<Card.Title class="text-base font-medium">{feature}</Card.Title>
+					</Card.Content>
+				</Card.Root>
 			{/each}
 		</div>
 	</div>
